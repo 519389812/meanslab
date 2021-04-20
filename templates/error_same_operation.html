@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    {% load custom_tags %}
+    {% include "head.html" %}
+    <title>Same operation</title>
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+{% include "navigation.html" %}
+
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Same operation
+        <small>重复的操作</small>
+    </h1>
+
+    <ol class="breadcrumb" style="background-color: {% background_color %}">
+        {% include "route.html" %}
+        <li class="breadcrumb-item active">Same operation</li>
+    </ol>
+
+    <div class="jumbotron">
+        <h1 class="display-5">您已经有过相同的操作，该操作只被允许一次！</h1>
+        <br>
+        {% include "error_redirect.html" %}
+    </div>
+    <!-- /.jumbotron -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+{% include "footer.html" %}
+
+<!-- Bootstrap core JavaScript -->
+{% include "script.html" %}
+
+</body>
+
+</html>

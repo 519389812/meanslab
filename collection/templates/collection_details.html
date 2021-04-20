@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    {% load custom_tags %}
+    {% include "head.html" %}
+    <title>means敏库</title>
+</head>
+
+<body>
+<!-- Navigation -->
+{% include "navigation.html" %}
+
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">
+        <small>{{ content.name }}</small>
+    </h1>
+
+    <ol class="breadcrumb" style="background-color: {% background_color %}">
+        {% include "route.html" %}
+        <li class="breadcrumb-item active">{{ content.name }}</li>
+    </ol>
+
+    <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+            <!-- Preview Image -->
+            <img class="img-fluid rounded" src="" alt="">
+
+            <hr>
+            <p>{{ content.score_count }}条评分中：
+                {% for i in content.star_fill %}
+                    <img src="{% static 'icon/star-fill.svg' %}" alt="Bootstrap" width="16" height="16">
+                {% endfor %}
+                {% for i in content.star_empty %}
+                    <img src="{% static 'icon/star.svg' %}" alt="Bootstrap" width="16" height="16">
+                {% endfor %}
+            </p>
+
+            <p>地址：{{ content.url }}
+            <p>
+                <!-- Post Content -->
+            <p>{{ content.content }}</p>
+            <hr>
+            <br>
+
+            <!-- Comments Form -->
+            <div class="card my-4">
+                <h5 class="card-header"><font size="3">请您留下对此网站的印象(每个用户只能评价一次):</font></h5>
+                <div class="card-body">
+                    <form name="rateForm" id="rateForm" action="{% url 'collection_rate' %}" method="post">
+                        {% csrf_token %}
+                        {% if request.user.is_authenticated == False %}
+                            <input type="text" class="form-control" name="collection" value="{{ content.id }}" hidden>
+                            <label style="float:left">评分:&nbsp;</label>
+                            <div class="score_show" style="float:left"></div>
+                            <input type="range" class="custom-range" min="1" max="5" step="1" name="score" id="score" disabled>
+                            <label>评分理由（请不要超过400字）:</label>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="4" name="content" disabled>请先注册/登录</textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" disabled>提交</button>
+                        {% else %}
+                            {% if rate_object_user == "" %}
+                                <input type="text" class="form-control" name="collection" value="{{ content.id }}" hidden>
+                                <label style="float:left">评分:&nbsp;</label>
+                                <div class="score_show" style="float:left">5</div>
+                                <input type="range" class="custom-range" min="1" max="5" step="1" name="score" id="score" value="5">
+                                <label>评分理由（请不要超过400字）:</label>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="4" name="content" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">提交</button>
+                            {% else %}
+                                <input type="text" class="form-control" name="collection" value="{{ content.id }}" hidden>
+                                <label style="float:left">评分:&nbsp;</label>
+                                <div class="score_show" style="float:left">{{ rate_object_user.score }}</div>
+                                <input type="range" class="custom-range" min="1" max="5" step="1" name="score" id="score" value="{{ rate_object_user.score }}" disabled>
+                                <label>评分理由（请不要超过400字）:</label>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="4" name="content" disabled>{{ rate_object_user.content }}</textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary" disabled>您已提交</button>
+                            {% endif %}
+                        {% endif %}
+                    </form>
+                </div>
+            </div>
+
+            <!-- Comment with nested comments -->
+            {% for value in rate_content %}
+            <div class="media mb-4">
+                <img class="d-flex mr-3 rounded-circle" src="" alt="">
+                <div class="media-body">
+                    <h5 class="mt-0">{{ value.user__username }}</h5>
+                    {{ value.content }}
+                    <footer class="blockquote-footer">发表于:<cite title="Source Title">{{ value.create_datetime }}</cite></footer>
+                    <div style="float:right"><a data-toggle="collapse" href="#comment_form" role="button"
+                                                aria-expanded="false" aria-controls="comment_form">回复</a></div>
+                    <div class="collapse" id="comment_form">
+                        {% if request.user.is_authenticated == False %}
+                            <form name="commentForm" id="commentForm" action="{% url 'collection_rate_comment' %}" method="post">
+                                {% csrf_token %}
+                                <div class="card card-body">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="rate" value="{{ value.id }}" hidden>
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">您的回复:</span>
+                                        </div>
+                                        <textarea class="form-control" aria-label="With textarea" name="content" disabled>请先注册/登录</textarea>
+                                        <button type="submit" class="btn btn-primary" disabled>提交</button>
+                                    </div>
+                                </div>
+                            </form>
+                        {% else %}
+                            <form name="commentForm" id="commentForm" action="{% url 'collection_rate_comment' %}" method="post">
+                                {% csrf_token %}
+                                <div class="card card-body">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="rate" value="{{ value.id }}" hidden>
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">您的回复:</span>
+                                        </div>
+                                        <textarea class="form-control" aria-label="With textarea" name="content" required></textarea>
+                                        <button type="submit" class="btn btn-primary">提交</button>
+                                    </div>
+                                </div>
+                            </form>
+                        {% endif %}
+                    </div>
+                    {% for v in value.comment|slice:'2' %}
+                        <div class="media mt-4">
+                            <img class="d-flex mr-3 rounded-circle" src="" alt="">
+                            <div class="media-body">
+                                <h5 class="mt-0">{{ v.user__username }}</h5>
+                                {{ v.content }}
+                                <footer class="blockquote-footer">发表于:<cite title="Source Title">{{ v.create_datetime }}</cite></footer>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    {% if value.comment|length > 2 %}
+                        <div align="center"><a data-toggle="collapse" href="#comment_content" aria-expanded="false" aria-controls="comment_content" id="comment_content_button"><font size="3" color="gray">点击展开更多</font></a></div>
+                        <div class="collapse" id="comment_content">
+                            {% for v in value.comment|slice:'2:' %}
+                                <div class="media mt-4">
+                                    <img class="d-flex mr-3 rounded-circle" src="" alt="">
+                                    <div class="media-body">
+                                        <h5 class="mt-0">{{ v.user__username }}</h5>
+                                        {{ v.content }}
+                                        <footer class="blockquote-footer">发表于:<cite title="Source Title">{{ v.create_datetime }}</cite></footer>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+            <!-- Side Widget -->
+            <div class="card my-4">
+                <h5 class="card-header">提示</h5>
+                <div class="card-body">
+                    <p>点击下方“访问”按钮，您将离开means网站，前往： {{ content.url }}</p>
+                    <p>请注意您的帐号和财产安全！</p>
+                </div>
+                <a type="button" class="btn btn-primary" href="{{ content.url }}">访问</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+{% include "footer.html" %}
+
+<!-- Bootstrap core JavaScript -->
+{% include "script.html" %}
+<script>
+$( document).ready(function() {
+    $('#score').on('input', function(){
+         v = $('#score').val();
+         $('div.score_show').text(v);
+    });
+
+    $('#comment_content_button').click(function(){
+        $('#comment_content_button').hide()
+    });
+});
+
+
+</script>
+
+</body>
+
+</html>
+
