@@ -1,0 +1,2 @@
+django==3.2
+user_agents==2.2.0

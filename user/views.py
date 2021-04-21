@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.http import HttpResponse
-from user.models import User, EmailVerifyRecord, QuestionVerifySource, QuestionVerifyRecord, Feedback
+from user.models import User, EmailVerifyRecord, Feedback
 from django.contrib.auth.hashers import check_password, make_password
 from django.contrib.auth import login as login_admin
 from django.contrib.auth import logout as logout_admin
@@ -17,8 +17,6 @@ from meanslab.settings import EMAIL_HOST_USER
 import random
 from user_agents import parse
 import json
-from urllib.parse import urlparse
-import uuid
 # from django_apscheduler.jobstores import DjangoJobStore, register_events, register_job
 # from django.utils import timezone
 from django.http import Http404
