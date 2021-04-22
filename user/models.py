@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from team.models import Team
+from district.models import District
 
 
 class User(AbstractUser):
@@ -8,6 +9,7 @@ class User(AbstractUser):
     email_verify = models.BooleanField(default=False, verbose_name='邮箱验证')
     email_subscription = models.BooleanField(default=False, verbose_name='邮箱订阅')
     introduction = models.TextField(max_length=40, verbose_name="简介", blank=True)
+    district = models.ForeignKey(District, on_delete=models.CASCADE, null=True, blank=True, verbose_name="地区")
 
 
     def get_full_name(self):

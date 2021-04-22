@@ -17,7 +17,11 @@ class TeamAdmin(admin.ModelAdmin):
         qs = super().get_queryset(request)
         if not request.user.is_superuser:
             try:
-                qs = qs.filter(related_parent__regex=r'\D%s\D' % str(request.user.team.id))
+                if request.user.team.parent:
+                    team_id = request.user.team.parent.id
+                else:
+                    team_id = request.user.team.id
+                qs = eval("qs.filter(related_parent__iregex=r'[^0-9]*%s[^0-9]')" % str(team_id))
             except:
                 pass
         return qs

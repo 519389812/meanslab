@@ -15,6 +15,6 @@ def get_city(request):
 
 
 def get_district(request):
-    district_id = District.GET.get('district_id')
+    district_id = request.GET.get('district_id')
     districts = District.objects.filter(parent_id=district_id).values()
     return JsonResponse({'districts': districts})
