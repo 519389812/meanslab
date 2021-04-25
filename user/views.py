@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.http import HttpResponse
-from user.models import User, EmailVerifyRecord, Feedback
+from user.models import User, EmailVerifyRecord, Feedback, District
 from django.contrib.auth.hashers import check_password, make_password
 from django.contrib.auth import login as login_admin
 from django.contrib.auth import logout as logout_admin
@@ -19,7 +19,7 @@ from user_agents import parse
 import json
 # from django_apscheduler.jobstores import DjangoJobStore, register_events, register_job
 # from django.utils import timezone
-from django.http import Http404
+from django.http import JsonResponse
 
 
 def check_datetime_opened(close_timezone, now_timezone):
@@ -208,21 +208,6 @@ def set_question_verify(request):
 
 
 @check_authority
-def save_question_verify(request):
-    if request.method == "POST":
-        question = request.POST.get("question", "")
-        answer = request.POST.get("answer", "")
-        if not check_post_valudate(request, check_question_validate, check_answer_validate):
-            return render(request, "set_question_verify.html", {"msg": "请输入正确的格式！"})
-        if QuestionVerifySource.objects.filter(user=request.user).count() > 2:
-            return render(request, "user_setting.html", {"msg": "设置失败，已经超过最大问题数量！"})
-        QuestionVerifySource.objects.create(user=request.user, question=question, answer=make_password(answer))
-        return render(request, "user_setting.html", {"msg": "设置成功！"})
-    else:
-        return render(request, "error_400.html", status=400)
-
-
-@check_authority
 def set_email_verify(request):
     return render(request, "set_email_verify.html")
 
@@ -265,71 +250,8 @@ def pre_reset_password(request):
     return render(request, "pre_reset_password.html")
 
 
-def pre_reset_password_by_question(request):
-    return render(request, "pre_reset_password_by_question.html")
-
-
 def pre_reset_password_by_email(request):
     return render(request, "pre_reset_password_by_email.html")
-
-
-def select_reset_password_by_question(request):
-    if request.method == "POST":
-        username = request.POST.get("username", "")
-        if username == "":
-            return render(request, "pre_reset_password_by_question.html", {"msg": "用户名为空"})
-        try:
-            user = User.objects.get(username=username)
-            question_list = QuestionVerifySource.objects.filter(user=user).values('id', 'question')
-            return render(request, "select_reset_password_by_question.html", {"question_list": question_list})
-        except:
-            return render(request, "pre_reset_password_by_question.html", {"msg": "用户名不存在"})
-    else:
-        return render(request, "error_400.html", status=400)
-
-
-def check_reset_password_question(request):
-    if request.method == "POST":
-        question_id = request.POST.get("question_id", "")
-        answer = request.POST.get("answer", "")
-        if question_id == "" or answer == "":
-            return render(request, "select_reset_password_by_question.html", {"msg": "输入为空"})
-        try:
-            question = QuestionVerifySource.objects.get(id=int(question_id))
-            print(answer, make_password(answer))
-            if check_password(answer, question.answer):
-                code = random_str(16)
-                QuestionVerifyRecord.objects.create(user=question.user, code=code, close_datetime=timezone.localtime(timezone.now()) + datetime.timedelta(minutes=5))
-                return render(request, "reset_password_by_question.html", {'code': code})
-            else:
-                return render(request, "pre_reset_password_by_question.html", {"msg": "答案不匹配，请检查"})
-        except:
-            return render(request, "pre_reset_password_by_question.html", {"msg": "问题不存在"})
-    else:
-        return render(request, "error_400.html", status=400)
-
-
-def reset_password_by_question(request, code):
-    if request.method == 'POST':
-        records = QuestionVerifyRecord.objects.filter(code=code)
-        if len(records) > 0:
-            for record in records:
-                if check_datetime_opened(timezone.localtime(record.close_datetime), timezone.localtime(timezone.now())):
-                    if not check_post_valudate(request, check_passwords_validate):
-                        return render(request, "reset_password_by_question.html", {"msg": "存在未按格式输入的字段!"})
-                    password = request.POST.get("password", "")
-                    password_repeat = request.POST.get("password_repeat", "")
-                    if password == "" or password_repeat == "":
-                        return render(request, 'reset_password_by_question.html', {"msg": "密码为空", "code": code})
-                    if password != password_repeat:
-                        return render(request, 'reset_password_by_question.html', {"msg": "两次输入的密码不一致", "code": code})
-                    user = User.objects.get(id=record.user.id)
-                    user.password = make_password(password)
-                    user.save()
-                    return render(request, 'login.html', {"msg": "密码修改成功"})
-            return render(request, 'reset_password_by_question.html', {"msg": "验证码已过期"})
-    else:
-        return render(request, "error_400.html", status=400)
 
 
 def send_reset_password_email(request):
@@ -560,3 +482,20 @@ def check_post_valudate(request, *args):
         if method(request).content != b'':
             return False
     return True
+
+
+def get_province(request):
+    provinces = District.objects.filter(parent__isnull=True).values()
+    return JsonResponse({"provinces": provinces})
+
+
+def get_city(request):
+    city_id = request.GET.get('city_id')
+    cities = District.objects.filter(parent_id=city_id).values()
+    return JsonResponse({"cities": cities})
+
+
+def get_district(request):
+    district_id = request.GET.get('district_id')
+    districts = District.objects.filter(parent_id=district_id).values()
+    return JsonResponse({'districts': districts})

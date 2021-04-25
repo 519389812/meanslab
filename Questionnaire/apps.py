@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class DistrictConfig(AppConfig):
+class QuestionnaireConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'district'
+    name = 'Questionnaire'
