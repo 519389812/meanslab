@@ -62,9 +62,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'user',
-    'team',
-    'collection',
-    'district',
 ]
 
 MIDDLEWARE = [
@@ -144,7 +141,7 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = '/home/meanslab/nginx/static/'  # collectstatic
 
-AUTH_USER_MODEL = 'user.user'
+AUTH_USER_MODEL = 'user.CustomUser'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = "/media/"
