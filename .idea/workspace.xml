@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5b75b75e-63c3-4b27-be63-f5bd915503aa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/meanslab.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/exchange/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/meanslab/old/js/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/meanslab/old/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/meanslab/old/js/jquery.slim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/meanslab/old/js/jquery.slim.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/css/blue-grey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/domain.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/email-protection.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/faq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/portal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/signin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/css/blue-grey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/css/cf.errors.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/css/css.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/css/hostino.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/css/slick.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/font/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/font/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/font/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/font/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/font/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/font/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/font/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/font/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/font/hostino.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/font/hostino.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/font/hostino.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/font/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/font/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/font/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/font/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/font/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/font/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/font/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/font/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/image/bg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/image/browser-bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/image/cf-icon-browser.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/image/cf-icon-cloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/image/cf-icon-error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/image/cf-icon-horizontal-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/image/cf-icon-ok.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/image/cf-icon-server.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/image/cf-no-screenshot-error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/image/cf-no-screenshot-warn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/image/cloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/image/clouds-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/image/icon-exclamation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/js/email-decode.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/js/metaball.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/js/paper-full.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/js/slick.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/article1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/article2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/article3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/article4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/article6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/bg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/cloud-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/cloud-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/clouds-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/drupal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/feature1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/feature2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/feature3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/feature4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/feature5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/feature6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/img-b1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/img-b2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/img-b3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/img-g1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/img-g2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/info-icon1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/info-icon2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/info-icon3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/info-icon4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/joomla.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/magento.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/main-slide-img1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/main-slide-img2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/person1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/photo1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/photo2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/photo3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/post.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/recent-article.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/team1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/team2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/team3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/team4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/team5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/team6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/team7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/team8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/picture/wordpress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/support.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/webhosting.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="29QFZyR1Swr6kWCHLcBKWQradMF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RunManager">
+    <configuration name="meanslab" type="Python.DjangoServer" factoryName="Django server">
+      <module name="meanslab" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b75b75e-63c3-4b27-be63-f5bd915503aa" name="Changes" comment="" />
+      <created>1653037465526</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653037465526</updated>
+      <workItem from="1653037466758" duration="644000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
