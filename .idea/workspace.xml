@@ -4,119 +4,7 @@
     <list default="true" id="8e1fddd4-1c96-48a6-84a5-b539bbc2eb14" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exchange/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/exchange/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exchange/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/exchange/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/meanslab/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/meanslab/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meanslab/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/meanslab/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/modern-business.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/driver/chromedriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/icon/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/icon/star-fill.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/icon/star-half.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/icon/star.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/clipboard.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/contact_me.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jqBootstrapValidation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.slim.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.slim.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.slim.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/qrcode.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/card.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/css/owl.carousel.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/css/responsive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/exchange/templates/exchange_footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/exchange/templates/exchange_head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/about-img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/call.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/client-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/client-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/fb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/instagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/linkedin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/location.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/mail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/next-light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/next.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/p1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/p2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/p3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/prev-light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/prev.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/right-arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/slider-img1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/slider-img2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/slider-img3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/twitter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/js/custom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/js/jquery-3.4.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/agreement.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/agreement_show.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/change_password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/copyright.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/copyright_show.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/error_400.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/error_400_clean.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/error_403.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/error_403_clean.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/error_404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/error_404_clean.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/error_500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/error_500_clean.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/error_not_accessible.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/error_redirect.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/error_same_operation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/error_too_frequent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/head.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/login_register_tips.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/navigation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/pre_reset_password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/pre_reset_password_by_email.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/release.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/release_show.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/reset_password_by_email.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/route.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/script.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/set_email_verify.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/user_setting.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/product.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/script.html" beforeDir="false" afterPath="$PROJECT_DIR$/exchange/templates/exchange_script.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/说明.htm" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +121,7 @@
       <workItem from="1653102266510" duration="6072000" />
       <workItem from="1653146000204" duration="927000" />
       <workItem from="1653182826620" duration="15432000" />
-      <workItem from="1653209180725" duration="14819000" />
+      <workItem from="1653209180725" duration="16018000" />
     </task>
     <servers />
   </component>
