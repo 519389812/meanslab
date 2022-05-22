@@ -35,7 +35,7 @@ if 'means' in BASE_DIR.parts:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': "means$default",
+            'NAME': "means$means",
             'USER': 'means',
             'PASSWORD': 'zjss123456',
             'HOST': 'means.mysql.pythonanywhere-services.com',
