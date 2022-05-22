@@ -1,126 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b75b75e-63c3-4b27-be63-f5bd915503aa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/meanslab.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="8e1fddd4-1c96-48a6-84a5-b539bbc2eb14" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exchange/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/exchange/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/meanslab/old/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/meanslab/old/js/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/meanslab/old/js/jquery.slim.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/meanslab/old/js/jquery.slim.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/css/blue-grey.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/domain.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/email-protection.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/faq.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/portal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/post.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/signin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/signup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/css/blue-grey.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/css/cf.errors.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/css/css.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/css/hostino.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/css/slick.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/font/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/font/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/font/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/font/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/font/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/font/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/font/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/font/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/font/hostino.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/font/hostino.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/font/hostino.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/font/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/font/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/font/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/font/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/font/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/font/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/font/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/font/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/image/bg1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/image/browser-bar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/image/cf-icon-browser.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/image/cf-icon-cloud.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/image/cf-icon-error.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/image/cf-icon-horizontal-arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/image/cf-icon-ok.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/image/cf-icon-server.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/image/cf-no-screenshot-error.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/image/cf-no-screenshot-warn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/image/cloud.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/image/clouds-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/image/icon-exclamation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/js/email-decode.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/js/metaball.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/js/paper-full.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/js/slick.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/article1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/article2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/article3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/article4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/article6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/bg1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/cloud-dark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/cloud-light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/clouds-light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/drupal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/feature1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/feature2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/feature3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/feature4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/feature5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/feature6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/img-b1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/img-b2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/img-b3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/img-g1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/img-g2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/info-icon1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/info-icon2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/info-icon3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/info-icon4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/joomla.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/magento.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/main-slide-img1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/main-slide-img2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/person1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/photo1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/photo2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/photo3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/post.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/recent-article.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/team1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/team2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/team3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/team4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/team5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/team6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/team7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/team8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/picture/wordpress.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/support.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/webhosting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/exchange/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meanslab/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/meanslab/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meanslab/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/meanslab/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/css/modern-business.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/driver/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/icon/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/icon/star-fill.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/icon/star-half.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/icon/star.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/clipboard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/contact_me.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jqBootstrapValidation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.slim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/jquery.slim.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/meanslab/old/js/qrcode.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/card.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/css/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/exchange/templates/exchange_footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/exchange/templates/exchange_head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/about-img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/call.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/client-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/client-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/fb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/instagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/linkedin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/location.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/mail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/next-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/p1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/p2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/p3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/prev-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/prev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/right-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/slider-img1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/slider-img2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/slider-img3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/twitter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/js/jquery-3.4.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/agreement.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/agreement_show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/change_password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/copyright.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/copyright_show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/error_400.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/error_400_clean.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/error_403.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/error_403_clean.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/error_404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/error_404_clean.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/error_500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/error_500_clean.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/error_not_accessible.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/error_redirect.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/error_same_operation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/error_too_frequent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/feedback.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/login_register_tips.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/navigation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/pre_reset_password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/pre_reset_password_by_email.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/release.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/release_show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/reset_password_by_email.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/route.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/script.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/set_email_verify.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/user_setting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/script.html" beforeDir="false" afterPath="$PROJECT_DIR$/exchange/templates/exchange_script.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/说明.htm" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +129,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
         <option value="HTML File" />
       </list>
     </option>
@@ -140,10 +137,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="29QFZyR1Swr6kWCHLcBKWQradMF" />
+  <component name="ProjectId" id="29Qq4KQcYVCPgN6Zoyr29xOPrnc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -153,9 +158,40 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/exchange/templates" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PyProject\meanslab\exchange\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PyProject\meanslab\exchange\templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.delete_migrations">
+    <configuration name="delete_migrations" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="meanslab" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/delete_migrations.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="meanslab" type="Python.DjangoServer" factoryName="Django server">
       <module name="meanslab" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -179,20 +215,43 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.delete_migrations" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5b75b75e-63c3-4b27-be63-f5bd915503aa" name="Changes" comment="" />
-      <created>1653037465526</created>
+      <changelist id="8e1fddd4-1c96-48a6-84a5-b539bbc2eb14" name="Changes" comment="" />
+      <created>1653055468462</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1653037465526</updated>
-      <workItem from="1653037466758" duration="644000" />
+      <updated>1653055468462</updated>
+      <workItem from="1653055469732" duration="13686000" />
+      <workItem from="1653102266510" duration="6072000" />
+      <workItem from="1653146000204" duration="927000" />
+      <workItem from="1653182826620" duration="15432000" />
+      <workItem from="1653209180725" duration="14819000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/meanslab$delete_migrations.coverage" NAME="delete_migrations Coverage Results" MODIFIED="1653228873121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

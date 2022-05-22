@@ -27,18 +27,17 @@ BACKGROUND_COLOR = '#ffffff;'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-online = False
-if online:
+if 'means' in BASE_DIR.parts:
     # SECURITY WARNING: don't run with debug turned on in production!
     DEBUG = False
-    ALLOWED_HOSTS = ['www.meanslab.com', 'meanslab.com']
+    ALLOWED_HOSTS = ['www.meanslab.com', 'meanslab.com', 'means.pythonanywhere.com']
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': "meanslab$default",
-            'USER': 'meanslab',
+            'NAME': "means$default",
+            'USER': 'means',
             'PASSWORD': 'zjss123456',
-            'HOST': 'meanslab.mysql.pythonanywhere-services.com',
+            'HOST': 'means.mysql.pythonanywhere-services.com',
         }
     }
 else:
@@ -62,6 +61,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'user',
+    'exchange',
 ]
 
 MIDDLEWARE = [
@@ -79,7 +79,10 @@ ROOT_URLCONF = 'meanslab.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'exchange', 'templates'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -133,18 +136,16 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static', 'means'),
-    os.path.join(BASE_DIR, 'collection', 'static', 'collection'),
-    # os.path.join(BASE_DIR, 'search', 'static', 'search'),
-    # os.path.join(BASE_DIR, 'predict', 'static', 'predict'),
+    os.path.join(BASE_DIR, 'static', 'meanslab'),
+    os.path.join(BASE_DIR, 'exchange', 'static', 'exchange'),
 ]
 
 STATIC_ROOT = '/home/meanslab/nginx/static/'  # collectstatic
 
 AUTH_USER_MODEL = 'user.CustomUser'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"  # Default
 

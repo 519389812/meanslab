@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+    {% include "exchange_head.html" %}
+    <title>Gift</title>
+
+</head>
+
+<body>
+
+<div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+        {% include 'exchange_navigation.html' %}
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="detail_box">
+                        <form action="{% url 'exchange:card' %}" method="post" >
+                            {% csrf_token %}
+                            <h1 align="center"><img src="{% static 'images/coupon.png' %}" alt="">Special Gift For You</h1>
+                            <input name="card_holder_id" type="text" value="{{ card_holder_id }}" hidden/>
+                            <div align="center" id="cardForm"></div>
+                            <div align="center">
+                            <div><button class="btn-info text-white" onclick="addCard()">Add a card</button><button class="btn-danger text-white" onclick="cleanCard()">Clean</button></div>
+                            <br>
+                            {% include "message.html" %}
+                            <div><button class="btn-lg btn-warning text-dark" type="submit">Add to mailbox or Skip</button></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end slider section -->
+</div>
+
+
+<!-- footer section -->
+
+<!-- footer section -->
+{% include 'exchange_script.html' %}
+<script>
+    var i = 0
+    function addCard() {
+        ++i;
+        if (i > 3) {
+            alert("Up to three cards.")
+            return
+        }
+        var content = ''
+        content +=
+            '<br><br>' +
+            '<label>Card name:' +
+            '    <input class="form-control-lg border-light" name="name_' + i + '" type="text" placeholder="eg. Housework card" required/>' +
+            '</label>' +
+            '<br>' +
+            '<label>Usable times:' +
+            '    <input class="form-control-lg border-light" name="times_' + i + '" type="number" placeholder="1, 2, 3..." required/>' +
+            '</label>' +
+            '<br>' +
+            '<label>Terms of use:' +
+            '    <textarea class="form-control border-light" name="term_' + i + '" placeholder="Optional" cols="43" rows="6" maxlength="300"></textarea>' +
+            '</label>' +
+            '<br><br>'
+        $('#cardForm').append(content);
+    }
+
+    function cleanCard() {
+        $('#cardForm').empty();
+    }
+</script>
+
+</body>
+
+</html>

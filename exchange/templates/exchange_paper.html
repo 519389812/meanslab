@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+    {% include "exchange_head.html" %}
+    <title>Gift</title>
+
+</head>
+
+<body>
+
+<div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+        {% include 'exchange_navigation.html' %}
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="detail_box">
+                        <h1 style="font-size: 30px">To: {{ card_holder.to }}<br></h1>
+                            <div class="img_container">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner" style="background-image: url('{% static 'images/paper.jpg' %}'); background-size: 100% 100%;">
+                                        <div class="img-box">
+                                            <p class="text-dark">{{ card_holder.content }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <h1 style="font-size: 30px" class="float-right">—— {{ card_holder.signature }}<br></h1>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 offset-lg-1">
+                    <div class="detail_box">
+                        <h1>Additional Coupon</h1>
+                        {% if cards|length > 0 %}
+                            {% for card in cards %}
+                                <p class="text-lg-left text-white">{{ card.name }}: {{ card.used_times }}/{{ card.times }}</p>
+                                <p class="text-lg-left text-white">Terms of use: {{ card.term }}</p>
+                                <label for="code_{{ card.id }}">Coupon Code:</label>
+                                <input class="form-control-sm border-light" id="code_{{ card.id }}" value="{{ card.code }}"/>
+                                <div id="show_copy_result_{{ card.id }}" style="display: none;" class="text-info">Copied.</div>
+                                <br>
+                                <button class="btn btn-group-sm btn-warning" id="copy_btn_{{ card.id }}" onclick="showCopyResult()">Copy</button>
+                                <hr class="border-light">
+                            {% endfor %}
+                            <p><a href="{% url 'exchange:exchange' %}" class="bg-warning text-dark">Use it now!</a></p>
+                        {% else %}
+                            <p>Nothing here</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end slider section -->
+</div>
+
+
+<!-- footer section -->
+
+<!-- footer section -->
+{% include 'exchange_script.html' %}
+<script src="{% static 'js/clipboard.min.js' %}"></script>
+<script>
+    function showCopyResult() {
+
+        var clipboard = new ClipboardJS('.btn', {
+        // 通过target指定要复印的节点
+            target: function(trigger) {
+                window.result_div = trigger.previousElementSibling.previousElementSibling;
+                return trigger.previousElementSibling.previousElementSibling.previousElementSibling;
+            }
+        });
+
+        clipboard.on('success', function(e){
+            $(result_div).slideDown().delay(1500).slideUp(300);
+            clipboard.destroy();
+        });
+        clipboard.on('error', function(e){
+            console.log(e);
+            clipboard.destroy();
+        });
+    }
+</script>
+</body>
+
+</html>

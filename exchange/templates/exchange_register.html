@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+    {% include "exchange_head.html" %}
+    <title>Gift</title>
+
+</head>
+
+<body>
+
+<div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+        {% include 'exchange_navigation.html' %}
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 " align="center">
+                    <div class="detail_box">
+                        <h1>Register<br></h1>
+                        <div>
+                            <form action="{% url 'exchange:register' %}" method="post">
+                                {% csrf_token %}
+                                <label style="font-size: 28px">Username:
+                                    <input class="form-control-lg border-light" type="text" name="username" required placeholder="Please enter a username"/>
+                                </label>
+                                <br>
+                                <label style="font-size: 28px">Password:
+                                    <input class="form-control-lg border-light" type="password" name="password" required placeholder="Please enter a password"/>
+                                </label>
+                                <br>
+                                <br>
+                                {% include "message.html" %}
+                                <button class="btn-lg btn-toolbar btn-warning" type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end slider section -->
+</div>
+
+
+<!-- footer section -->
+
+<!-- footer section -->
+{% include 'exchange_script.html' %}
+
+</body>
+
+</html>

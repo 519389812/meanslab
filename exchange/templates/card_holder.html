@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+    {% include "exchange_head.html" %}
+    <title>Gift</title>
+
+</head>
+
+<body>
+
+<div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+        {% include 'exchange_navigation.html' %}
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="detail_box">
+                        <form action="{% url 'exchange:card_holder' %}" method="post" >
+                            {% csrf_token %}
+                            <div align="center">
+                                <h1><img src="{% static 'images/mailbox.png' %}" alt="">Something to tell you</h1>
+                                <label>To:
+                                    <input class="form-control-lg border-light" name="to" type="text" placeholder="To" required/>
+                                </label>
+                                <br>
+                                <label>Content:
+                                    <textarea class="form-control border-light" name="content" placeholder="Your best wishes" cols="50" rows="8" maxlength="300" required></textarea>
+                                </label>
+                                <br>
+                                <label>Signature:
+                                    <input class="form-control-lg border-light" name="signature" type="text" placeholder="Your signature" required/>
+                                </label>
+                                <br>
+                                <br>
+                                {% include "message.html" %}
+                                <div ><button class="btn-lg btn-warning text-dark" type="submit">Add to mailbox</button></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end slider section -->
+</div>
+
+
+<!-- footer section -->
+
+<!-- footer section -->
+{% include 'exchange_script.html' %}
+
+</body>
+
+</html>

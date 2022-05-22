@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+    {% include "exchange_head.html" %}
+    <title>Gift</title>
+
+</head>
+
+<body>
+
+<div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+        {% include 'exchange_navigation.html' %}
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="detail_box">
+                        <div class="img_container">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner" style="background-image: url('{% static 'images/open_gift.jpg' %}'); background-size: 100% 100%;">
+                                    <div class="img-box">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 offset-lg-1">
+                    <div class="detail_box">
+                        {% if success == True %}
+                            <h1>Congratulations!<br><br></h1>
+                            <p class="text-lg-left text-white">
+                                <label for="text">Tell the giver:</label>
+                                <textarea class="form-control border-light" id="text" rows="8" cols="8">I just used the 【{{ exchange_card.used_times }}】 coupon of 【{{ exchange_card.name }}】, please tell me when you finish!</textarea>
+                                <div id="show_copy_result" style="display: none;" class="text-info">Copied!</div><br>
+                                <button class="btn btn-warning" id="copy_code" data-clipboard-target="#text">Copy</button>
+                                <p class="text-lg-left text-white">{{ exchange_card.name }} Used: {{ exchange_card.used_times }}/{{ exchange_card.times }}</p>
+                            </p>
+                        {% else %}
+                            <h1>Sorry!<br><br></h1>
+                            <p class="text-lg-left text-white">The number of times this coupon is available has been used up</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end slider section -->
+</div>
+
+
+<!-- footer section -->
+
+<!-- footer section -->
+{% include 'exchange_script.html' %}
+<script src="{% static 'js/clipboard.min.js' %}"></script>
+<script>
+    var btn=document.getElementById('copy_code');
+	var clipboard=new ClipboardJS(btn);
+	clipboard.on('success', function(e){
+		$('#show_copy_result').slideDown().delay(1500).slideUp(300);
+		console.log(e);
+	});
+	clipboard.on('error', function(e){
+		console.log(e);
+	});
+</script>
+</body>
+
+</html>
