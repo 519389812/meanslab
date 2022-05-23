@@ -12,8 +12,8 @@ from nanoid import generate
 def check_authority(func):
     def wrapper(*args, **kwargs):
         if not args[0].user.is_authenticated:
-            if "X-Requested_With" in args[0].headers:
-                return JsonResponse('Login required.', safe=False)
+            # if "X-Requested_With" in args[0].headers:
+            #     return JsonResponse('Login required.', safe=False)
             return redirect('/exchange/login/?next=%s' % args[0].path)
         return func(*args, **kwargs)
     return wrapper
